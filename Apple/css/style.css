@@ -1,0 +1,286 @@
+/* reset */
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 55px;;
+}
+
+/* header */
+header{
+    background-color: rgba(250, 250, 252, .8);
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    padding: 0;
+
+}
+
+.header-main{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+    height: 44px;
+}
+
+.header-main img{
+    padding-top: 5px;
+    width: 34px;
+    height: auto;
+}
+
+.title{
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.title ul{
+    justify-content: space-between;
+}
+
+.title li a {
+    margin: 0 15px;
+    text-decoration: none;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+.header-main img{
+    margin: 0 10px;
+}
+
+.title li a:link{
+    color: black;
+}
+.title li a:visited{
+    color: black;
+}
+
+.loan{
+    font-size: 12px; 
+    padding: 13px 0;
+    text-align: center;
+    margin: 0;
+}
+
+.link:link{
+    text-decoration: none;
+}
+.link:visited{
+    color: #0071d1;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.loan span{
+    color: #0071d1;
+}
+
+/* セクション１ */
+.pic-1 img{
+    width: 100%;
+    height: 580px;
+    object-fit: contain;
+    margin: 5px 0;
+}
+.container{
+    width: 100%;
+    height: calc(100% - var(--global-nav-collective-height, 0));
+    position: relative;
+}
+
+.pic-in {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    margin: auto 0;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.flex p{
+    margin: 20px;
+}
+
+.flex span{
+    margin: 0 5px;
+    color: #0071d1;
+}
+
+.pic-1 a:link{
+    text-decoration: none;
+}
+
+.pic-1 .link:hover{
+    text-decoration: underline;
+}
+
+.pic-in2{
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    margin: auto 0;
+}
+
+/* セクション２ */
+.pic-2{
+    display: flex;
+    margin-left: 1%;
+    margin-bottom: 0.5%;
+    
+}
+
+.pic-2 img{
+    width: 98%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.container-flex{
+    justify-content: center;
+    width: 98%;
+    height: auto;
+    position: relative;
+}
+
+.pic-in-flex {
+    position: absolute;
+    top: 20px;
+    width: 98%;
+    text-align: center;
+    margin: auto 0;
+}
+
+.flex-2{
+    display: flex;
+    justify-content: center;
+}
+.flex-2 p{
+    margin: 5px;
+}
+.flex-2 span{
+    margin: 0 5px;
+    color: #0071d1;
+}
+
+/* カルーセル */
+/* カルーセル全体 */
+.carousel2 {
+    /* 水平方向中央寄せ */
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+/* カルーセル余白 */
+.flex-3{
+    display: flex;
+}
+.flex-4{
+    width: 20%;
+}
+.flex-5{
+    width: 20%;
+}
+
+/* カルーセル内容 */
+.contains {
+    /* 下の.slideも同じサイズにすること。 */
+    width: 100%;
+    height: 600px;
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+.carousel{
+    display: flex;
+    width: 1010px;
+    height: 600px;
+    
+}
+
+.carousel img {
+ 
+    margin-right: 10px;
+    padding: 0;
+    width: 1000px;
+    height: 600px;
+    transition: opacity 2s ease;
+}
+
+/* スライド切り換え用ラジオボタンは常に非表示 */
+.slide_select {
+    display: none;
+}
+
+/* スライド移動ボタンエリア */
+.move_controler {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+/* スライド移動の各ボタン */
+.button_move {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    border-radius: 100%;
+    cursor: pointer;
+    opacity: 0.5;
+    /* スライドより前面にする */
+    z-index: 2;
+}
+
+.button_move:hover {
+    opacity: 0.75;
+}
+/* スライド移動ボタンの色 */
+.button_move {
+    background-color: #fdfdfd;
+}
+
+/* スクロールアニメーションのキーフレーム */
+@keyframes scroll {
+    /* 初期位置は1個目の画像が左端 */
+    0% { margin-left: 0%;}      
+    /* 1個分左の位置に進めて2個目の画像を左端にする */
+    20% { margin-left: -100%;}
+    /* 少しの間上と同じ位置 */  
+    25% { margin-left: -100%;}
+    /* 2個分左の位置に進めて3個目の画像を左端にする */
+    45% { margin-left: -200%;}
+    /* 少しの間上と同じ位置 */  
+    50% { margin-left: -200%;}
+    /* 以降は上と同様に繰り返し */
+    70% { margin-left: -300%;}
+    75% { margin-left: -300%;}
+    95% { margin-left: -400%;}
+    100% { margin-left: -400%;}
+  }
+  /* カルーセルの子要素にスクロールアニメーションを設定 */
+  .carousel > :first-child {
+    animation-name: scroll;    /* キーフレーム名 */
+ 
+    animation-duration: 20s;  /* 再生時間全体 */
+    animation-delay: 3s;      /* 読込直後からの遅延 */
+    animation-iteration-count: infinite;  /* 無限に繰り返す */
+  }
+
+  .slide {
+    opacity: 0.5;
+    transition: opacity 1s ease-in-out;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+  }
+  .slide.active {
+    opacity: 1.0;
+  }
