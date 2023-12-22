@@ -203,7 +203,6 @@ header{
     display: flex;
     width: 1010px;
     height: 600px;
-    
 }
 
 .carousel img {
@@ -249,16 +248,15 @@ header{
 
 /* スクロールアニメーションのキーフレーム */
   @keyframes scroll1 {
-    0% { left: 0%;}       
-    25% { left: -100%;}
-    50% { left: -200%;}
-    75% { left: -300%;}
-    100% { left: -400%;}
+    0% { margin-left: 0%;}       
+    25% { margin-left: -100%;}
+    50% { margin-left: -200%;}
+    75% { margin-left: -300%;}
+    100% { margin-left: -400%;}
   }
 
   /* カルーセルの子要素にスクロールアニメーションを設定 */
     .img1 > :first-child {
-    position: relative;
     animation-name: scroll1;    /* キーフレーム名 */
     animation-iteration-count: infinite;
     animation-duration: 20s;  /* 再生時間全体 */
@@ -268,16 +266,15 @@ header{
 
   /* スクロールアニメーションのキーフレーム */
   @keyframes scroll2 {
-    0% { left: 100%;}       
-    25% { left: 0%;}
-    50% { left: -100%;}
-    75% { left: -200%;}
-    100% { left: -300%;}
+    0% { margin-left: 0%;}       
+    25% { margin-left: -100%;}
+    50% { margin-left: -200%;}
+    75% { margin-left: -300%;}
+    100% { margin-left: -400%;}
   }
 
   /* カルーセルの子要素にスクロールアニメーションを設定 */
     .img2 > :first-child {
-        position: relative;
     animation-name: scroll2;    /* キーフレーム名 */
     animation-iteration-count: infinite;
     animation-duration: 20s;  /* 再生時間全体 */
@@ -287,11 +284,11 @@ header{
 
    /* スクロールアニメーションのキーフレーム */
    @keyframes scroll3 {
-    0% { margin-left: 200%;}       
-    25% { margin-left: 100%;}
-    50% { margin-left: 0%;}
-    75% { margin-left: -100%;}
-    100% { margin-left: -200%;}
+    0% { margin-left: 0%;}       
+    25% { margin-left: -100%;}
+    50% { margin-left: -200%;}
+    75% { margin-left: -300%;}
+    100% { margin-left: -400%;}
   }
 
   /* カルーセルの子要素にスクロールアニメーションを設定 */
@@ -304,11 +301,11 @@ header{
 
   /* スクロールアニメーションのキーフレーム */
   @keyframes scroll4 {
-    0% { margin-left: 300%;}       
-    25% { margin-left: 200%;}
-    50% { margin-left: 100%;}
-    75% { margin-left: 0%;}
-    100% { margin-left: -100%;}
+    0% { margin-left: 0%;}       
+    25% { margin-left: -100%;}
+    50% { margin-left: -200%;}
+    75% { margin-left: -300%;}
+    100% { margin-left: -400%;}
   }
 
   /* カルーセルの子要素にスクロールアニメーションを設定 */
@@ -321,11 +318,11 @@ header{
 
   /* スクロールアニメーションのキーフレーム */
   @keyframes scroll5 {
-    0% { margin-left: 400%;}       
-    25% { margin-left: 300%;}
-    50% { margin-left: 200%;}
-    75% { margin-left: 100%;}
-    100% { margin-left: 0%;}
+    0% { margin-left: 0%;}       
+    25% { margin-left: -100%;}
+    50% { margin-left: -200%;}
+    75% { margin-left: -300%;}
+    100% { margin-left: -400%;}
   }
 
   /* カルーセルの子要素にスクロールアニメーションを設定 */
