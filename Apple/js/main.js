@@ -17,3 +17,5 @@ function updateOpacity() {
   
   // Update opacity every 5 seconds
   setInterval(updateOpacity, 5000);
+
+

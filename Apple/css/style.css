@@ -207,7 +207,6 @@ header{
 }
 
 .carousel img {
- 
     margin-right: 10px;
     padding: 0;
     width: 1000px;
@@ -249,38 +248,101 @@ header{
 }
 
 /* スクロールアニメーションのキーフレーム */
-@keyframes scroll {
-    /* 初期位置は1個目の画像が左端 */
-    0% { margin-left: 0%;}      
-    /* 1個分左の位置に進めて2個目の画像を左端にする */
-    20% { margin-left: -100%;}
-    /* 少しの間上と同じ位置 */  
-    25% { margin-left: -100%;}
-    /* 2個分左の位置に進めて3個目の画像を左端にする */
-    45% { margin-left: -200%;}
-    /* 少しの間上と同じ位置 */  
-    50% { margin-left: -200%;}
-    /* 以降は上と同様に繰り返し */
-    70% { margin-left: -300%;}
-    75% { margin-left: -300%;}
-    95% { margin-left: -400%;}
-    100% { margin-left: -400%;}
+  @keyframes scroll1 {
+    0% { left: 0%;}       
+    25% { left: -100%;}
+    50% { left: -200%;}
+    75% { left: -300%;}
+    100% { left: -400%;}
   }
+
   /* カルーセルの子要素にスクロールアニメーションを設定 */
-  .carousel > :first-child {
-    animation-name: scroll;    /* キーフレーム名 */
- 
+    .img1 > :first-child {
+    position: relative;
+    animation-name: scroll1;    /* キーフレーム名 */
+    animation-iteration-count: infinite;
     animation-duration: 20s;  /* 再生時間全体 */
     animation-delay: 3s;      /* 読込直後からの遅延 */
-    animation-iteration-count: infinite;  /* 無限に繰り返す */
+    overflow: hidden;
+  }
+
+  /* スクロールアニメーションのキーフレーム */
+  @keyframes scroll2 {
+    0% { left: 100%;}       
+    25% { left: 0%;}
+    50% { left: -100%;}
+    75% { left: -200%;}
+    100% { left: -300%;}
+  }
+
+  /* カルーセルの子要素にスクロールアニメーションを設定 */
+    .img2 > :first-child {
+        position: relative;
+    animation-name: scroll2;    /* キーフレーム名 */
+    animation-iteration-count: infinite;
+    animation-duration: 20s;  /* 再生時間全体 */
+    animation-delay: 3s;      /* 読込直後からの遅延 */
+    overflow: hidden;
+  }
+
+   /* スクロールアニメーションのキーフレーム */
+   @keyframes scroll3 {
+    0% { margin-left: 200%;}       
+    25% { margin-left: 100%;}
+    50% { margin-left: 0%;}
+    75% { margin-left: -100%;}
+    100% { margin-left: -200%;}
+  }
+
+  /* カルーセルの子要素にスクロールアニメーションを設定 */
+  .img3 > :first-child {
+    animation-name: scroll3;    /* キーフレーム名 */
+    animation-iteration-count: infinite;
+    animation-duration: 20s;  /* 再生時間全体 */
+    animation-delay: 3s;      /* 読込直後からの遅延 */
+  }
+
+  /* スクロールアニメーションのキーフレーム */
+  @keyframes scroll4 {
+    0% { margin-left: 300%;}       
+    25% { margin-left: 200%;}
+    50% { margin-left: 100%;}
+    75% { margin-left: 0%;}
+    100% { margin-left: -100%;}
+  }
+
+  /* カルーセルの子要素にスクロールアニメーションを設定 */
+  .img4 > :first-child {
+    animation-name: scroll4;    /* キーフレーム名 */
+    animation-iteration-count: infinite;
+    animation-duration: 20s;  /* 再生時間全体 */
+    animation-delay: 3s;      /* 読込直後からの遅延 */
+  }
+
+  /* スクロールアニメーションのキーフレーム */
+  @keyframes scroll5 {
+    0% { margin-left: 400%;}       
+    25% { margin-left: 300%;}
+    50% { margin-left: 200%;}
+    75% { margin-left: 100%;}
+    100% { margin-left: 0%;}
+  }
+
+  /* カルーセルの子要素にスクロールアニメーションを設定 */
+  .img5 > :first-child {
+    animation-name: scroll5;    /* キーフレーム名 */
+    animation-iteration-count: infinite;
+    animation-duration: 20s;  /* 再生時間全体 */
+    animation-delay: 3s;      /* 読込直後からの遅延 */
   }
 
   .slide {
     opacity: 0.5;
     transition: opacity 1s ease-in-out;
-    flex: 0 0 100%;
     box-sizing: border-box;
   }
+
   .slide.active {
     opacity: 1.0;
   }
+  
