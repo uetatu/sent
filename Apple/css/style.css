@@ -248,11 +248,19 @@ header{
 
 /* スクロールアニメーションのキーフレーム */
   @keyframes scroll1 {
-    0% { margin-left: 0%;}       
-    25% { margin-left: -100%;}
-    50% { margin-left: -200%;}
-    75% { margin-left: -300%;}
-    100% { margin-left: -400%;}
+    0% { margin-left: 0%;
+         opacity: 1;}       
+    20% { margin-left: -100%;
+          opacity: 0.5;}
+    40% { margin-left: -200%;
+            opacity: 0;}
+    59% { opacity: 0;}
+    60% { margin-left: 200%;
+          opacity: 0.5;}
+    80% { margin-left: 100%;
+          opacity: 0.5;}
+    100% { margin-left: 0%;
+           opacity: 1;}
   }
 
   /* カルーセルの子要素にスクロールアニメーションを設定 */
@@ -266,11 +274,19 @@ header{
 
   /* スクロールアニメーションのキーフレーム */
   @keyframes scroll2 {
-    0% { margin-left: 0%;}       
-    25% { margin-left: -100%;}
-    50% { margin-left: -200%;}
-    75% { margin-left: -300%;}
-    100% { margin-left: -400%;}
+    0% { margin-left: 0%;
+         opacity: 0.5;}       
+    20% { margin-left: -100%;
+          opacity: 1;}
+    40% { margin-left: -200%;
+          opacity: 0.5;}
+    60% { margin-left: -300%;
+          opacity: 0;}
+    79% { opacity: 0;}
+    80% { margin-left: 100%;
+           opacity: 0.5;}
+    100% { margin-left: 0%;
+           opacity: 0.5;}
   }
 
   /* カルーセルの子要素にスクロールアニメーションを設定 */
@@ -284,11 +300,20 @@ header{
 
    /* スクロールアニメーションのキーフレーム */
    @keyframes scroll3 {
-    0% { margin-left: 0%;}       
-    25% { margin-left: -100%;}
-    50% { margin-left: -200%;}
-    75% { margin-left: -300%;}
-    100% { margin-left: -400%;}
+    0% { margin-left: 0%;
+         opacity: 0.5;}       
+    20% { margin-left: -100%;
+         opacity: 0.5;}
+    40% { margin-left: -200%;
+          opacity: 1;}
+    60% { margin-left: -300%;
+          opacity: 0.5;}
+    80% { margin-left: -400%;
+           opacity: 0;}
+    99%{ opacity: 0;}
+    100% { margin-left: 100%;
+           opacity: 0.5;}
+
   }
 
   /* カルーセルの子要素にスクロールアニメーションを設定 */
@@ -301,11 +326,18 @@ header{
 
   /* スクロールアニメーションのキーフレーム */
   @keyframes scroll4 {
-    0% { margin-left: 0%;}       
-    25% { margin-left: -100%;}
-    50% { margin-left: -200%;}
-    75% { margin-left: -300%;}
-    100% { margin-left: -400%;}
+    0% { margin-left: 0%;
+        opacity: 0;}       
+    20% { margin-left: -100%;
+         opacity: 0.5;}
+    40% { margin-left: -200%;
+          opacity: 0.5;}
+    60% { margin-left: -300%;
+          opacity: 1;}
+    80% { margin-left: -400%;
+          opacity: 0.5;}
+    100% { margin-left: -500%;
+          opacity: 0;}
   }
 
   /* カルーセルの子要素にスクロールアニメーションを設定 */
@@ -318,11 +350,19 @@ header{
 
   /* スクロールアニメーションのキーフレーム */
   @keyframes scroll5 {
-    0% { margin-left: 0%;}       
-    25% { margin-left: -100%;}
-    50% { margin-left: -200%;}
-    75% { margin-left: -300%;}
-    100% { margin-left: -400%;}
+    0% { margin-left: -500%;
+         opacity: 0.5;}       
+    20% { margin-left: -600%;
+          opacity: 0;}
+    39% { opacity: 0;}
+    40% { margin-left: -200%;
+          opacity: 0.5;}
+    60% { margin-left: -300%;
+          opacity: 0.5;}
+    80% { margin-left: -400%;
+          opacity: 1;}         
+    100% { margin-left: -500%;
+           opacity: 0.5;}
   }
 
   /* カルーセルの子要素にスクロールアニメーションを設定 */
@@ -334,12 +374,7 @@ header{
   }
 
   .slide {
-    opacity: 0.5;
     transition: opacity 1s ease-in-out;
     box-sizing: border-box;
-  }
 
-  .slide.active {
-    opacity: 1.0;
   }
-  
