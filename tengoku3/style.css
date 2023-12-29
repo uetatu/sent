@@ -1,6 +1,7 @@
 body{
     margin: 15px 5%;
     max-width: 1025px;
+    font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
 }
 
 p{
@@ -299,6 +300,7 @@ ol{
     }
     .image-style p {       
         font-size: 12px; 
+        margin-top: -20px;
     }
     .image-style p br{
         display: none;
