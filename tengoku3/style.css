@@ -1,0 +1,303 @@
+body{
+    margin: 15px 5%;
+    max-width: 1025px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+h2{
+    color: #316ea9;
+}
+/* ハンバーガーメニュー（ボタン） */
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #316ea9 ;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 30px;
+    border-radius: 3px;
+    background-color: #316ea9;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+.menu-btn span{
+    top: 20px;
+}
+
+.menu{
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 40px;
+    color: #316ea9;
+}
+
+#menu-btn-check {
+    display: none;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+    background-color: white;
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+    background-color: white;
+}
+
+#menu-btn-check:checked ~ .menu-btn .menu {
+    color: white;
+}
+
+#menu-btn-check:checked ~ .menu-btn{
+    border: 1px solid white ;
+}
+
+/* ハンバーガーメニュー（内容） */
+.menu-content {
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #316ea9;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+#menu-btn-check:checked ~ .menu-content {
+    left: 70%;/*メニューを画面内へ*/
+}
+
+/* オンラインプレゼンス */
+.flex-2{
+    width: 100%;
+    margin-top: 5vb;
+    display: flex;
+    justify-content: space-between;
+}
+.flex-2 img{
+    width: auto; 
+    height: 250px;
+}
+.title{
+    font-size: 25px;
+}
+.fontsize{
+    font-size: 40px;
+}
+
+/* サービス内容 */
+.flex-3{
+    margin-top: 5vb;
+    display: flex;
+    justify-content: space-between;
+}
+.flex-3 ol li{
+    font-size: 12px;
+}
+ol{
+    padding-left: 15px;
+}
+
+.image-style{
+    width: 40%;
+    margin: auto 0;
+}
+
+.image-style img{
+    width: 100%;
+    height: auto;
+}
+
+.image-style p{
+    margin-top: -40px;
+    text-align: center;
+    font-size: 15px; 
+    font-weight: bold;
+}
+
+/* カテゴリー */
+.service{
+    width: 17%;
+    height: auto;
+    background-color: #9ddadb;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    padding: 8px 0px;
+    margin: 5px;
+}
+.flex-6{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.flex-6 p{
+    width: 33%;
+}
+.service-flex{
+    display: flex;
+}
+
+/* Corporate philosophy */
+.flex-5{
+    margin-top: 5vb;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 会社概要 */
+.flex-4{
+    margin-top: 5vb;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.border{
+    padding-left: 5px;
+    border-left: 5px solid #9ddadb;
+}
+
+@media screen and (min-width: 1200px) { /*ウィンドウ幅が1200px以上の場合に適用*/
+    body{
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 1085px) { /*ウィンドウ幅が1085px以下の場合に適用*/
+    br{
+        display: none;
+    }
+    .flex-2 br{
+        display: block;
+    }
+    .service{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .image-style p br{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 980px) { /*ウィンドウ幅が最大980pxまでの場合に適用*/
+    body{
+        margin: 15px 2%;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .fontsize{
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+    body{
+        margin: 5px;
+        min-width: 350px;
+    }
+    /* ハンバーガーメニュー */
+    .menu-content {
+        width: 20%;
+    }
+    #menu-btn-check:checked ~ .menu-content {
+        left: 81%;/*メニューを画面内へ*/
+    }
+
+    .title{
+        font-size: 15px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .flex img{
+        width: 30%;
+    }
+    .flex-2{
+        justify-content:space-around;
+    }
+    .flex-2 img{
+        width: 40%; 
+        height: auto;
+        object-fit: contain;
+    }
+    .flex-3 ol li{
+        font-size: 10px;
+    }
+    .service-flex{
+        flex-wrap: wrap;
+        
+    }
+    .menu-content ul li a{
+        font-size: 10px;
+    }
+    .fontsize{
+        font-size: 25px;
+    }
+    .image-style p {       
+        font-size: 12px; 
+    }
+    .image-style p br{
+        display: none;
+    }
+}
+
