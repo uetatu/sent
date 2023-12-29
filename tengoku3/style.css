@@ -255,13 +255,6 @@ ol{
         margin: 5px;
         min-width: 350px;
     }
-    /* ハンバーガーメニュー */
-    .menu-content {
-        width: 20%;
-    }
-    #menu-btn-check:checked ~ .menu-content {
-        left: 81%;/*メニューを画面内へ*/
-    }
 
     .title{
         font-size: 15px;
