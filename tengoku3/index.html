@@ -20,15 +20,15 @@
                 <label for="menu-btn-check" class="menu-btn"><span></span>
                 <p class="menu">MENU</p></label>
                 <div class="menu-content">
-                    <ul>
+                    <ul id="page-link">
                         <li>
-                            <a href="">メニュー</a>
+                            <a href="#flex-3">メニュー</a>
                         </li>
                         <li>
-                            <a href="">会社概要</a>
+                            <a href="#flex-4">会社概要</a>
                         </li>
                         <li>
-                            <a href="">問い合わせ</a>
+                            <a href="form/inquiry.html" target="_blank">問い合わせ</a>
                         </li>
                     </ul>
                 </div>
@@ -50,7 +50,7 @@
     </section>
 
     <!-- サービス内容 -->
-    <section>
+    <section id="flex-3">
         <div class="flex-3">
             <div style="width: 60%; height: auto;">
                 <h2 class="title">サービス内容</h2>
@@ -110,7 +110,7 @@
     </section>
 
     <!-- 会社概要 -->
-    <section>
+    <section id="flex-4">
         <h2 class="title">会社概要</h2>
         <div class="flex-4">
             <div style="width: 60%; height: 60%; margin-top: 0;">
@@ -151,7 +151,9 @@
     <!-- お問い合わせ -->
     <section>
         <h2 class="title">お問い合わせ</h2>
-        <p>お問合せ・お見積り依頼は<a href="">こちら</a>よりメールでお問い合わせください。</p>
+        <p>お問合せ・お見積り依頼は<a href="form/inquiry.html" target="_blank">こちら</a>よりメールでお問い合わせください。</p>
     </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 </html>
