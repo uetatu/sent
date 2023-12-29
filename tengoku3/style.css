@@ -283,6 +283,10 @@ ol{
     .flex-3 ol li{
         font-size: 10px;
     }
+    .flex-4 img{
+        margin: auto 0;
+        min-width: 200px;
+    }
     .service-flex{
         flex-wrap: wrap;
         
@@ -300,4 +304,3 @@ ol{
         display: none;
     }
 }
-
