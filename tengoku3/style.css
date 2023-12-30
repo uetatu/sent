@@ -252,6 +252,9 @@ ol{
 .flex-4 h2{
     width: 100%;
 }
+.p-width{
+    width: 99.5%;
+}
 .flex-4 img{order: 2;}
 .flex-4-width{
     width: 65%; 
@@ -286,6 +289,9 @@ ol{
     }
     .flex-2 br{
         display: block;
+    }
+    .flex-5 div{
+        width: 100%;
     }
     .service{
         font-size: 10px;
@@ -378,7 +384,7 @@ ol{
         order: 2;
     }
     .list{
-        width: 95%;
+        width: 100%;
         order: 3;
     }
     #flex-4{
@@ -401,14 +407,13 @@ ol{
     }
     .flex-5 h2{
         width: 52%;
-        margin: auto 5% 0 0;
+        margin: auto 0 0 0;
         order: 2;
         text-align: right;
     }
     .img-3{order: 1;}
     .flex-5 div{
         order: 3;
-        width: 95%;
     }
     .service-flex{flex-wrap: wrap;}
     .menu-content ul li a{font-size: 10px;}
